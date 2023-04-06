@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando IMC</title>
+</head>
+<body>
+    <script>
+        //se pisa con el codigo que comienza en la linea 50
+              /* 
+         function saltarlinea(){
+             
+                document.write("<br><br><br>");
+                //document.write("<br>");
+                //document.write("<br>");
+                //document.write("<br>");
+            
+            } 
+
+            function imprimir(frase){
+                document.write(frase);
+                saltarlinea();
+            }
+
+            function calcularImc(peso, altura, nombre){
+                imc = peso / (altura * altura);
+                //return(imc);
+                imprimir("el imc calculado de "+ nombre + " es " + imc);
+            }
+
+            calcularImc(71, 1.72, "Cristian");
+            calcularImc(75, 1.73, "Felipe");
+            */  
+            
+            /*
+            pesoEduardo = 98
+            alturaEduardo= 1.86
+            //imcEduardo = pesoEduardo / (alturaEduardo*alturaEduardo)
+            imcEduardo= calcularImc (pesoEduardo, alturaEduardo)
+            imprimir ("El  IMC de eduardo es: " + imcEduardo)
+
+            
+            pesoFelipe = 75
+            alturaFelipe = 1.73
+            imcFelipe = calcularImc (pesoFelipe, alturaFelipe)
+            imprimir ("El  IMC de Felipe es: " + imcFelipe)
+            */
+
+            /*Explorando a fondo el retorno de funciones*/
+            
+            /*
+            function saltarlinea(){
+                
+                document.write("<br><br><br>");
+                //document.write("<br>");
+                //document.write("<br>");
+                //document.write("<br>");
+            
+            } 
+
+            function imprimir(frase){
+                document.write(frase);
+                saltarlinea();
+            }
+
+            function calcularImc(peso1, altura1, nombre1, peso2, altura2, nombre2){
+                imc1 = peso1 / (altura1 * altura1);
+                imc2 = peso2 / (altura2 * altura2);
+                imprimir("El  promedio del imc calculado de "+ nombre1 + " y " + nombre2 + " es: " + (imc1+imc2)/2);
+            }
+
+            calcularImc(71, 1.72, "Cristian",75, 1.73, "Felipe");
+            calcularImc(60, 1.70, "gabriela",55, 1.60, "luisa");
+            
+            */
+           
+
+            /*con return*/
+            /*
+            function saltarlinea(){
+                
+                document.write("<br><br><br>");
+                //document.write("<br>");
+                //document.write("<br>");
+                //document.write("<br>");
+            
+            } 
+
+            function imprimir(frase){
+                document.write(frase);
+                saltarlinea();
+            }
+
+            function calcularImc(peso, altura){
+                imc = peso / (altura * altura);
+                return imc;
+            } 
+            
+            var imcEduardo = calcularImc(96, 1.86);
+            var imcFelipe = calcularImc(75, 1.73);
+            //imprimir("El  promedio del imc calculado de Eduardo y Felipe es: "+ (imcEduardo+imcFelipe)/2) ;
+            imprimir("El  promedio del imc calculado de Eduardo y Felipe es: "+ (calcularImc(96, 1.86)+calcularImc(75, 1.73))/2) ;
+            imprimir("El  promedio del imc calculado de Gabrila y Luisa es: "+ (calcularImc(65, 1.68)+calcularImc(55, 1.60))/2) ;
+            /*
+            
+            /*interactuaando con el usuario*/
+            
+            function saltarlinea(){
+                
+                document.write("<br><br><br>");
+                //document.write("<br>");
+                //document.write("<br>");
+                //document.write("<br>");
+            
+            } 
+
+            function imprimir(frase){
+                document.write(frase);
+                saltarlinea();
+            }
+
+            function calcularImc(peso, altura){
+                imc = peso / (altura * altura);
+                return imc;
+            } 
+            nombre= prompt("infrome su nombre:")
+            pesoInformado = prompt(nombre + ", infrome su peso:")
+            alturaInformado= prompt(nombre + ", informe su altura:")
+
+            imcCalculado = calcularImc(pesoInformado, alturaInformado);
+            
+            imprimir(nombre + ", su imc calculado es: "+ imcCalculado);
+
+
+    </script>
+</body>
+</html>

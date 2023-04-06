@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo diferencia de edades</title>
+</head>
+<body>
+    <script>
+        function saltarlinea(){
+                
+                document.write("<br><br><br>");
+                //document.write("<br>");
+                //document.write("<br>");
+                //document.write("<br>");
+            
+            } 
+
+            
+            function diferenciaEdad(edadhermano = 30, miedad= 27){
+                document.write("la diferencia de edad con mi hermano es..." + Math.round(edadhermano-miedad));
+                saltarlinea();
+            }
+            
+            diferenciaEdad();
+
+
+         //solucion ejercicio
+        function saltarLinea() {
+        document.write("<br>");
+        }
+
+        function imprimir(frase) {
+        document.write(frase);
+    }
+
+        var miEdad = 18;
+        var edadHermano = 15;
+
+
+        imprimir("Nuestra diferencia de edad es " + (miEdad - edadHermano));
+
+    </script>
+</body>
+</html>
